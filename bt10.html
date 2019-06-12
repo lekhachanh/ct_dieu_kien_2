@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    kwh = parseFloat(prompt('nhập vào số điện của bạn'));
+    if ( kwh < 0) {
+        alert('mời bạn nhập lại giá trị dương');
+    }else if (0<kwh<=50) {
+        document.write('giá điện là: '+ kwh*1.678);
+    }else if (50<kwh<=100) {
+        document.write('giá điện là: '+ kwh*1.734);
+    }else  if (100<kwh<=200) {
+        document.write('giá điện là: '+ kwh*2.014);
+    }else if (200<kwh<=300) {
+        document.write('giá điện là: '+ kwh* 2.536);
+    }else if (300<kwh<=400) {
+        document.write('giá điện là: '+ kwh* 2.834);
+    }else  {
+        document.write('giá điện là: '+ kwh* 2.927);
+    }
+</script>
+</body>
+</html>
